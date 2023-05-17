@@ -1,0 +1,29 @@
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background:linear-gradient(top,red ,blue);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#leftDiv,
+#rightDiv {
+  width: 650px;
+  height: 650px;
+  margin: 0px;
+  /* border: 1px solid black; */
+  padding: 0px;
+}
+#rightDiv {
+  background-image: url("/assets/SAL.png");
+  background-size: cover;
+}
+.block {
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  border: none;
+}

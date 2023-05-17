@@ -1,0 +1,18 @@
+<div class="container flex">
+  <app-congratulation-modal></app-congratulation-modal>
+</div>
+
+<div class="container-flex row">
+  <div class=" diceSect col-lg-4">
+    <p>Current Player: {{ currentPlayer }}</p>
+    <button (click)="rollDice()">Roll Dice</button>
+    <span>{{ diceValue }}</span>
+  </div>
+  <div class="game-board col-lg-8 px-0 my-3">
+    <div *ngFor="let square of getSquares()" class="square">
+      <!-- {{ square }} -->
+      <div class="player1" *ngIf="playerPositions[0] === square"></div>
+      <div class="player2" *ngIf="playerPositions[1] === square"></div>
+    </div>
+  </div>
+</div>

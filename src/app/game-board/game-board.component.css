@@ -1,0 +1,72 @@
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  width: 600px;
+  height: 600px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  background-image: url("/assets/SAL.png");
+  background-size: cover;
+}
+.container-fluid{
+  height:100vh;
+  width: 100vw;
+}
+.diceSect{
+  margin-left: 150px;
+  margin-top: 250px;
+}
+.diceSect button{
+  margin-right: 30px;
+}
+.diceSect span{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  /* border: 1px solid #000000; */
+}
+
+.player1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 2px;
+  z-index: 3;
+}
+.player2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  margin: 2px;
+  z-index: 3;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+}
+

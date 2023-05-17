@@ -1,0 +1,8 @@
+<!-- Add your desired HTML and styling for the modal -->
+<div class="modal" *ngIf="showModal">
+  <div class="modal-content">
+    <h2>Congratulations Player {{ winner }}!</h2>
+    <p>You reached the 100th square and won the game.</p>
+    <button (click)="closeModal()">Close</button>
+  </div>
+</div>
